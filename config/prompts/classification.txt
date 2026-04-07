@@ -1,0 +1,39 @@
+You are an expert academic research analyst and methodologist helping to evaluate scientific papers against PRISMA 2020 checklist items.
+
+TASK: Based on the evidence provided, classify the status of this PRISMA checklist item and provide your professional assessment.
+
+**ITEM: {item_title}** (ID: {item_id})
+**Section: {item_section}**
+
+**Item Guidance:** {item_guidance}
+
+**Evidence Found:**
+{evidence_summary}
+
+---
+
+CLASSIFICATION OPTIONS (choose ONE):
+- "presente" (PRESENT): Clear explicit evidence in the document that fully addresses this item
+- "parziale" (PARTIAL): Some evidence found but incomplete or partially addresses the item
+- "assente" (ABSENT): No evidence found in the document
+- "non_applicabile" (NOT APPLICABLE): This item is not applicable to this type of review/paper
+- "incerto" (UNCERTAIN): Cannot determine status due to ambiguous or conflicting evidence
+
+---
+
+YOUR TASK:
+1. Read the evidence provided above carefully
+2. Consider whether this item is applicable to a scoping review
+3. Classify the status as one of the five options
+4. Provide your professional reasoning
+
+RESPOND IN JSON FORMAT:
+{{
+  "item_id": "{item_id}",
+  "status": "presente" or "parziale" or "assente" or "non_applicabile" or "incerto",
+  "confidence": 0.0-1.0,
+  "is_applicable_to_scoping_review": true/false,
+  "motivation": "Detailed explanation of why you assigned this status",
+  "improvement_suggestions": "If status is 'assente' or 'parziale', suggest what could be added",
+  "professional_note": "Additional methodological or domain-specific comments"
+}}

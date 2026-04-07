@@ -1,0 +1,23 @@
+SYSTEMATIC MAPPING OF REMOTE MONITORING TECHNOLOGIES IN CHRONIC DISEASE MANAGEMENT: A SCOPING REVIEW
+
+Abstract
+Background: Remote monitoring technologies have rapidly expanded in chronic disease management. This scoping review aims to map the landscape of technologies, implementation contexts, and reported outcomes.
+
+Methods: We searched MEDLINE, Embase, and Google Scholar for studies published 2018-2024 describing remote monitoring interventions for chronic diseases. Eligibility criteria included peer-reviewed publications, systematic reviews, and grey literature reporting on any remote monitoring technology or implementation aspect. Study selection was performed independently by two reviewers. Data extraction focused on: technology type, disease area, study design, population characteristics, and reported outcomes. This scoping review did not conduct meta-analysis or risk of bias assessment.
+
+Results: We identified 287 unique publications after deduplication, from which 45 studies met full inclusion criteria. Technologies ranged from simple SMS-based systems to AI-enabled wearables. Implementation contexts varied widely across primary care, specialist clinics, and community settings. Pain points identified included user engagement challenges (22 studies, 48%), data interoperability issues (18 studies, 40%), and training requirements for healthcare providers (15 studies, 33%). Positive outcomes included improved medication adherence reported in 28 studies (62%) and reduced hospital readmissions in 24 studies (53%).
+
+Discussion: The evidence base for remote monitoring continues to expand rapidly. Significant heterogeneity exists in technology implementation, outcome measurement, and population characteristics, presenting both opportunities and challenges for evidence synthesis and clinical adoption. Future efforts should focus on standardization of outcome reporting and investigation of implementation barriers.
+
+Conclusions: Remote monitoring technologies show promise for chronic disease management, but comprehensive evidence synthesis is needed alongside implementation science approaches to optimize real-world effectiveness.
+
+Funding: This research was supported by Grant XYZ123 from the National Research Foundation.
+
+Conflicts of Interest: All authors declare no conflicts of interest.
+
+Data Availability: Data and materials are available upon request from the corresponding author.
+
+References
+1. Author A, Author B. Title of first paper. Journal Name. 2024;10(1):1-10.
+2. Author C, et al. Title of second paper. Another Journal. 2023;5(2):100-115.
+3. Researcher D. Title of review. Systematic Reviews. 2022;11(1):45.

@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prisma-scoping-review-analyzer"
+version = "0.1.0"
+description = "PRISMA 2020 Analyzer for Scoping Reviews using local LLMs via Ollama"
+requires-python = ">=3.10"
+authors = [
+    {name = "Architecture", email = "arch@example.com"}
+]
+
+dependencies = [
+    "pdfplumber>=0.10.0",
+    "pydantic>=2.0.0",
+    "ollama>=0.1.0",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0.0",
+    "click>=8.0.0",
+    "structlog>=24.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+prisma-analyze = "cli:main"
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
