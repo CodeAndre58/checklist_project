@@ -102,7 +102,7 @@ class OllamaClient:
                     "temperature": 0.3,  # Lower temperature for consistency
                 },
                 headers=headers,
-                timeout=120  # 120 second timeout for remote servers
+                timeout=1200  # 1200 second timeout for remote servers
             )
             
             if response.status_code != 200:

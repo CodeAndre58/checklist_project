@@ -33,9 +33,10 @@ def chunk_document_text(filename: str, full_text: str, chunk_size: int = 1000) -
         # Track page numbers from extracted markers
         if line.startswith("--- PAGE"):
             try:
-                current_page = int(line.split()[-3].strip("---"))
+                current_page = int(line.split()[2].strip("---"))
             except:
                 pass
+            continue  # Don't add page markers to chunk text
         
         # Track sections
         line_lower = line.lower()
@@ -48,7 +49,7 @@ def chunk_document_text(filename: str, full_text: str, chunk_size: int = 1000) -
         
         # Create chunk when size threshold reached
         if len(current_chunk_text) >= chunk_size:
-            if current_chunk_text.strip() and "PAGE" not in current_chunk_text:
+            if current_chunk_text.strip():
                 chunk_id = f"{filename.replace('.pdf', '')}_p{current_page:02d}_s{current_section}_c{chunk_index:03d}"
                 chunk = Chunk(
                     chunk_id=chunk_id,
@@ -63,7 +64,7 @@ def chunk_document_text(filename: str, full_text: str, chunk_size: int = 1000) -
                 current_chunk_text = ""
     
     # Add remaining text
-    if current_chunk_text.strip() and "PAGE" not in current_chunk_text:
+    if current_chunk_text.strip():
         chunk_id = f"{filename.replace('.pdf', '')}_p{current_page:02d}_s{current_section}_c{chunk_index:03d}"
         chunk = Chunk(
             chunk_id=chunk_id,
